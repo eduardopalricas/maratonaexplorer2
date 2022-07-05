@@ -19,15 +19,20 @@ div.content{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 60px;
+  width: 30vw;
+  padding-top:30px ;
+  padding-bottom:30px ;
   border-radius: 15px;
 }
 
 
 img{
   width: 150px;
-  height:150px;
+  border-radius: 50%;
+  border: rgba(168, 255, 255, 0.644) solid 4px;
+  padding: 3.7px;
 }
+
 
 
 h1{
@@ -50,10 +55,14 @@ ul{
 
 
 .linkcontent{
+  display: flex;
   margin: 10px;
-  padding: 10px 6vw;
+  padding: 10px 0px;
+  width: 30vw;
   background-color: #74B0B0;
-  border-radius: 10px;
+  border-radius: 0px;
+  justify-content: center;
+  transition: background 200ms;
 }
 
 
@@ -66,4 +75,95 @@ a{
   text-decoration: none;
   color: white;
   font-size: 18px;
+}
+
+.linkcontent:hover{
+  background-color:#74b0b0b7 ;
+}
+
+@media (max-width: 1250px) {
+  .linkcontent{
+    width:35vw
+  }
+  div.content{
+    width:35vw
+  }
+}
+
+
+@media (max-width: 1050px) {
+  .linkcontent{
+    width:40vw
+  }
+  div.content{
+    width:40vw
+  }
+}
+
+
+@media (max-width: 850px) {
+  .linkcontent{
+    width:45vw
+  }
+  div.content{
+    width:45vw
+  }
+}
+
+
+@media (max-width: 750px) {
+  .linkcontent{
+    width:50vw
+  }
+  div.content{
+    width:50vw
+  }
+}
+
+
+@media (max-width: 650px) {
+  .linkcontent{
+    width:55vw
+  }
+  div.content{
+    width:55vw
+  }
+}
+
+
+@media (max-width: 550px) {
+  .linkcontent{
+    width:60vw
+  }
+  div.content{
+    width:60vw
+  }
+}
+
+@media (max-width: 450px) {
+  .linkcontent{
+    width:65vw
+  }
+  div.content{
+    width:65vw
+  }
+}
+
+
+@media (max-width: 400px) {
+  .linkcontent{
+    width:70vw
+  }
+  div.content{
+    width:70vw
+  }
+}
+
+@media (max-width: 350px) {
+  .linkcontent{
+    width:75vw
+  }
+  div.content{
+    width:75wvw
+  }
 }
