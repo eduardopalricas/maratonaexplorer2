@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;1,300&family=Alegreya:ital,wght@1,400;1,700&family=Comforter&family=Lobster&family=Luckiest+Guy&family=Passion+One:wght@400;700;900&family=Playfair+Display&family=Quintessential&family=Roboto:ital,wght@0,400;1,700&family=Sriracha&display=swap');
 
 
+:root{
+  --body-color: rgba(168, 255, 255, 0.644);
+  --titlecolor: #338181; 
+  --p-button-color: #74B0B0;
+  --hover-color:#74b0b0b7 ; 
+}
+
 body{
   margin: 0px;
   padding: 0px;
@@ -9,8 +16,10 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(168, 255, 255, 0.644);
+  background-color: var(--body-color);
 }
+
+
 
 
 div.content{
@@ -29,7 +38,7 @@ div.content{
 img{
   width: 150px;
   border-radius: 50%;
-  border: rgba(168, 255, 255, 0.644) solid 4px;
+  border: var(--body-color) solid 4px;
   padding: 3.7px;
 }
 
@@ -37,14 +46,14 @@ img{
 
 h1{
   font-family: robotoslab;
-  color: #338181;
+  color: var(--titlecolor);
   margin-bottom: 0px;
 }
 
 p{
   margin-top: 5px;
   margin-bottom: 0px;
-  color: #74B0B0;
+  color: var(--p-button-color);
 }
 
 
@@ -59,7 +68,7 @@ ul{
   margin: 10px;
   padding: 10px 0px;
   width: 30vw;
-  background-color: #74B0B0;
+  background-color: var(--p-button-color);
   border-radius: 0px;
   justify-content: center;
   transition: background 200ms;
@@ -78,7 +87,7 @@ a{
 }
 
 .linkcontent:hover{
-  background-color:#74b0b0b7 ;
+  background-color:var(--hover-color) ;
 }
 
 @media (max-width: 1250px) {
